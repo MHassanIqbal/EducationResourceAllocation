@@ -125,5 +125,3 @@ print(filt_row)
 # Save the results to a new Excel file
 with pd.ExcelWriter("school_rankings_topsis.xlsx", engine="openpyxl") as writer:
      data.to_excel(writer, sheet_name="Rankings", index=False)
-
-# Display the ranked data
